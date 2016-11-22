@@ -1,0 +1,11 @@
+<div class="row">
+
+    <div class="col-md-5">
+        <recipe-list (sendRecipe)="selectedRecipes=$event"></recipe-list>
+    </div>
+
+    <div class="col-md-7">
+        <recipe-detail [selectedRecipe]="selectedRecipes"></recipe-detail>
+    </div>
+
+</div>
